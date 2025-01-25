@@ -166,7 +166,7 @@ python3 main.py  <model_name> <calibration_dataset> --task <task_name> --num_few
 To measure the latency of token generation, start by installing the CUDA kernel. This kernel is based on lut_gemm, but please note that the code has been updated, even though the name remains the same.
 ```bash
 cd lut_gemm
-python setup_lut.py install
+pip install .
 ```
 Next, quantize the model in the Lat. version and save the packed weights:
 ```bash
